@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "architecture",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T07:17:37.521Z",
+  "specification": {
+    "path": "D:\\Project\\Salary_Application_new\\candidate.json",
+    "sha256": "749a3d1e0ae945a412dfc82fd0151eb4d5f0436c5ea118e5cea6c18c2152d93e",
+    "bytes": 3259
+  },
+  "artifact": {
+    "path": "D:\\Project\\Salary_Application_new\\salary-app-architecture.html",
+    "sha256": "fb141ea480a8931c717d42c39a3776cd0a2ac35a81318ecbf0f2d698c3f09ff4",
+    "bytes": 847881
+  },
+  "stages": {
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\admin\\.claude\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "architecture",
+        "D:\\Project\\Salary_Application_new\\candidate.json",
+        "D:\\Project\\Salary_Application_new\\salary-app-architecture.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "749a3d1e0ae945a412dfc82fd0151eb4d5f0436c5ea118e5cea6c18c2152d93e",
+          "bytes": 3259
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 48820,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\admin\\.claude\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "architecture",
+        "D:\\Project\\Salary_Application_new\\candidate.json",
+        "D:\\Project\\Salary_Application_new\\salary-app-architecture.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "7737f953-7788-415a-804c-5f576fa0819a",
+        "ok": true,
+        "command": "deliver",
+        "type": "architecture",
+        "input": "D:\\Project\\Salary_Application_new\\candidate.json",
+        "output": "D:\\Project\\Salary_Application_new\\salary-app-architecture.html",
+        "specification": {
+          "sha256": "749a3d1e0ae945a412dfc82fd0151eb4d5f0436c5ea118e5cea6c18c2152d93e",
+          "bytes": 3259
+        },
+        "artifact": {
+          "sha256": "fb141ea480a8931c717d42c39a3776cd0a2ac35a81318ecbf0f2d698c3f09ff4",
+          "bytes": 847881
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 12810,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\admin\\.claude\\skills\\archify\\bin\\archify.mjs",
+        "check",
+        "D:\\Project\\Salary_Application_new\\salary-app-architecture.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "D:\\Project\\Salary_Application_new\\salary-app-architecture.html",
+        "artifact": {
+          "sha256": "fb141ea480a8931c717d42c39a3776cd0a2ac35a81318ecbf0f2d698c3f09ff4",
+          "bytes": 847881
+        },
+        "checks": [
+          {
+            "name": "single_svg",
+            "ok": true,
+            "details": [
+              "found 1 <svg> block(s)"
+            ]
+          },
+          {
+            "name": "finite_svg",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "orthogonal_arrows",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "label_route_clearance",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "relationship_crossings",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "relationship_corridors",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "container_border_runs",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "route_rhythm",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "legend_clearance",
+            "ok": true,
+            "details": []
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "metrics": {
+            "properCrossings": 0,
+            "resolvedCrossovers": 0,
+            "ambiguousCorridors": 0,
+            "arrowheadCollisions": 0,
+            "containerBorderRuns": 0,
+            "labelRouteClearanceIssues": 0,
+            "labelCanvasOverflowIssues": 0,
+            "minLabelRouteClearance": 4,
+            "desktopReadabilityIssues": 0,
+            "viewportHeightIssues": 0,
+            "minProjectedNodeTextPx": 7.3,
+            "maxBends": 4,
+            "routesOverSuggestedBends": 2,
+            "maxStretch": 1.416,
+            "routesOverSuggestedStretch": 1,
+            "minSegmentPx": 16,
+            "minInteriorSegmentPx": 16,
+            "shortSegmentCount": 0,
+            "shortEndpointSegmentCount": 0,
+            "shortInteriorSegmentCount": 0,
+            "microSegmentCount": 0
+          },
+          "suggestedLimits": {
+            "bendsPerRelationship": 2,
+            "stretch": 1.35,
+            "segmentPx": 16,
+            "microSegmentPx": 8
+          },
+          "routeReview": {
+            "crossings": [],
+            "detours": [
+              {
+                "relationship": {
+                  "id": "router-to-api",
+                  "from": "router",
+                  "to": "api",
+                  "label": "route dispatch",
+                  "collectionIndex": 5,
+                  "artifactIndex": 6
+                },
+                "bends": 4,
+                "stretch": 1.134,
+                "directCorridorBlockers": [
+                  {
+                    "id": "db",
+                    "label": "SQLite DB",
+                    "box": [
+                      670,
+                      300,
+                      140,
+                      60
+                    ]
+                  }
+                ]
+              },
+              {
+                "relationship": {
+                  "id": "api-to-db",
+                  "from": "api",
+                  "to": "db",
+                  "label": "SQL operations",
+                  "collectionIndex": 7,
+                  "artifactIndex": 8
+                },
+                "bends": 4,
+                "stretch": 1.416
+              }
+            ]
+          },
+          "leadingSpace": {
+            "measured": true,
+            "emptyTopPx": 146,
+            "emptyTopRatio": 0.326,
+            "occupiedTop": 146,
+            "viewBoxTop": 0,
+            "canvasHeight": 448,
+            "typicalNodeHeight": 60,
+            "reviewSuggested": true
+          },
+          "desktopReadability": {
+            "budgetBasis": "recognized-declared-wide",
+            "readerContract": "declared-wide-v1",
+            "availableDiagramWidth": 1080,
+            "actualBudgetPx": 1080,
+            "actualReaderWidth": 1110,
+            "desiredReaderWidth": 1110,
+            "viewportCap": 1376,
+            "limit": "source-size",
+            "requestedTargetPx": 7.5,
+            "requestedTargetMet": false,
+            "hardFloorPx": 6,
+            "hardFloorMet": true,
+            "minimumOwner": {
+              "kind": "node",
+              "id": "auth"
+            },
+            "minimumSourceTextPx": 7.3,
+            "minimumProjectedTextPx": 7.3,
+            "semanticTextCount": 29
+          },
+          "issues": []
+        },
+        "provenance": "current",
+        "deliveryReceiptId": "7737f953-7788-415a-804c-5f576fa0819a"
+      }
+    },
+    "browser-check": {
+      "status": "fail",
+      "exitCode": 1,
+      "durationMs": 51039,
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "C:\\Users\\admin\\.claude\\skills\\archify\\bin\\archify.mjs",
+        "browser-check",
+        "D:\\Project\\Salary_Application_new\\salary-app-architecture.html",
+        "--json",
+        "--require-provenance"
+      ],
+      "execution": "in-process",
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": false,
+        "command": "browser-check",
+        "evidenceKind": "automated-browser",
+        "status": "fail",
+        "visualReview": "not-requested",
+        "provenance": "current",
+        "deliveryReceiptId": "7737f953-7788-415a-804c-5f576fa0819a",
+        "artifact": {
+          "path": "D:\\Project\\Salary_Application_new\\salary-app-architecture.html",
+          "sha256": "fb141ea480a8931c717d42c39a3776cd0a2ac35a81318ecbf0f2d698c3f09ff4",
+          "bytes": 847881
+        },
+        "state": {
+          "detail": "read",
+          "motion": "still"
+        },
+        "chrome": {
+          "status": "available",
+          "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+        },
+        "diagnostics": [
+          {
+            "code": "viewer/temp-cleanup-incomplete",
+            "severity": "error",
+            "message": "Browser cleanup could not safely finish; inspect the reported retained path.",
+            "subject": {
+              "artifact": "D:\\Project\\Salary_Application_new\\salary-app-architecture.html"
+            },
+            "evidence": {
+              "reason": "Chrome did not exit; retained temporary profile \"C:\\Users\\admin\\AppData\\Local\\Temp\\archify-visual-check-profile-MIGDgX\".",
+              "retainedDirectory": "C:\\Users\\admin\\AppData\\Local\\Temp\\archify-visual-check-profile-MIGDgX"
+            },
+            "supportedFixes": [
+              "resolve the reported process or filesystem failure; verify directory ownership before manual cleanup"
+            ]
+          }
+        ],
+        "containment": {
+          "status": "fail",
+          "policy": "fit-or-reader-declared-readable-vertical-scroll",
+          "viewports": []
+        },
+        "themeStates": {
+          "status": "fail",
+          "viewports": []
+        },
+        "readability": {
+          "status": "fail",
+          "minimumProjectedNodeTextPx": 6,
+          "viewports": []
+        },
+        "viewerChrome": {
+          "status": "fail",
+          "viewports": []
+        },
+        "captures": {
+          "status": "not-requested",
+          "screenshots": [],
+          "contactSheet": null
+        },
+        "sidecars": {
+          "receipt": "salary-app-architecture.browser-check.json",
+          "files": []
+        },
+        "error": "Chrome did not exit; retained temporary profile \"C:\\Users\\admin\\AppData\\Local\\Temp\\archify-visual-check-profile-MIGDgX\"."
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  },
+  "diagnostics": [
+    {
+      "code": "viewer/temp-cleanup-incomplete",
+      "severity": "error",
+      "message": "Browser cleanup could not safely finish; inspect the reported retained path.",
+      "subject": {
+        "artifact": "D:\\Project\\Salary_Application_new\\salary-app-architecture.html"
+      },
+      "evidence": {
+        "reason": "Chrome did not exit; retained temporary profile \"C:\\Users\\admin\\AppData\\Local\\Temp\\archify-visual-check-profile-MIGDgX\".",
+        "retainedDirectory": "C:\\Users\\admin\\AppData\\Local\\Temp\\archify-visual-check-profile-MIGDgX"
+      },
+      "supportedFixes": [
+        "resolve the reported process or filesystem failure; verify directory ownership before manual cleanup"
+      ]
+    }
+  ],
+  "evidence": {
+    "receipt": "D:\\Project\\Salary_Application_new\\salary-app-architecture.finalize.json",
+    "summaryReceipt": "D:\\Project\\Salary_Application_new\\salary-app-architecture.finalize-summary.json",
+    "browserCheckReceipt": "D:\\Project\\Salary_Application_new\\salary-app-architecture.browser-check.json"
+  },
+  "visualReview": "not-requested",
+  "failedStage": "browser-check",
+  "finishedAt": "2026-11-03T07:19:54.304Z",
+  "durationMs": 136783,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "timeout"
+  }
+}

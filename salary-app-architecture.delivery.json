@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "7737f953-7788-415a-804c-5f576fa0819a",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "D:\\Project\\Salary_Application_new\\candidate.json",
+  "output": "D:\\Project\\Salary_Application_new\\salary-app-architecture.html",
+  "specification": {
+    "sha256": "749a3d1e0ae945a412dfc82fd0151eb4d5f0436c5ea118e5cea6c18c2152d93e",
+    "bytes": 3259
+  },
+  "artifact": {
+    "sha256": "fb141ea480a8931c717d42c39a3776cd0a2ac35a81318ecbf0f2d698c3f09ff4",
+    "bytes": 847881
+  }
+}

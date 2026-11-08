@@ -1,0 +1,54 @@
+.wrangler/
+.dev.vars
+node_modules/
+dist/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+salary-workbook-import.json
+# Playwright CLI output (may contain credentials)
+.playwright-cli/
+.playwright/
+# Tooling / machine-local config (not part of the app)
+.claude/
+.archify/
+.21st/
+.agents/
+skills-lock.json
+# Nested git repo (separate project, not a submodule)
+TrackingDashboard/
+
+# Wrangler DB dumps and dev artifacts (may contain credential hashes / remote DB metadata)
+local_user.json
+local_users.json
+prod_count.json
+sessions_schema.json
+users_schema.json
+tables.json
+candidate.json
+sessions_err.txt
+tail.log
+*.log
+# Debug/test screenshots and temp files
+*.png
+*.jpeg
+*.jpg
+~$*.xlsx
+# Local dev scripts (manual testing, not part of the app)
+test-attendance.js
+test-company.js
+test-data.sql
+test-debug.js
+test-errors.js
+test-hash.js
+test-l-leave.js
+test-leave.js
+test-login.js
+test-login2.js
+test-logs.js
+test-travel.js
+reset-password.js
+set-password.js
+showSlip-new.js
+check_braces.cjs
+delete-button-loc.html

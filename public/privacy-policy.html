@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Privacy Policy — Salary Desk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <style>
+      :root { color-scheme: light; font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; color: #111827; background: #f8fafc; }
+      body { margin: 0; min-height: 100vh; padding: 48px 20px; line-height: 1.6; }
+      .page { max-width: 760px; margin: 0 auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 48px; box-shadow: 0 1px 3px rgba(15,23,42,0.06); }
+      h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.03em; margin: 0 0 8px; }
+      h2 { font-size: 18px; font-weight: 600; margin: 32px 0 8px; }
+      p { margin: 0 0 12px; color: #374151; font-size: 14px; }
+      ul { padding-left: 22px; margin: 0 0 12px; color: #374151; font-size: 14px; }
+      li { margin-bottom: 6px; }
+      .meta { color: #94a3b8; font-size: 12px; margin-bottom: 24px; }
+      a { color: #2563eb; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .back { display: inline-block; margin-top: 24px; font-size: 13px; font-weight: 500; }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h1>Privacy Policy</h1>
+      <div class="meta">Last updated: November 4, 2026</div>
+
+      <p>Salary Desk (&ldquo;we&rdquo;, &ldquo;our&rdquo;) operates the payroll and attendance management application at this domain. This page explains what data we collect, how we use it, and what choices you have.</p>
+
+      <h2>1. Data we collect</h2>
+      <ul>
+        <li><strong>Account information:</strong> username, password hash, and recovery email provided during setup or account creation.</li>
+        <li><strong>Employee records:</strong> name, employee ID, department, designation, salary components, bank account, PAN, UAN, ESIC number, and email addresses entered by administrators.</li>
+        <li><strong>Attendance and payroll data:</strong> daily attendance marks, leave requests, salary revisions, travel journeys, and payslip outputs.</li>
+        <li><strong>Session data:</strong> a session token stored in an HttpOnly cookie used to keep you signed in.</li>
+      </ul>
+
+      <h2>2. Where data is stored</h2>
+      <p>All data is stored in a private SQLite database hosted on Cloudflare Workers D1. We do not sell your data to third parties. Employee bank details, tax identifiers, and salary figures are encrypted in transit (TLS) and accessible only to authenticated users with the appropriate role.</p>
+
+      <h2>3. How we use data</h2>
+      <p>We use the data solely to operate the payroll workspace: calculate salaries, track attendance, manage leave, and generate payslips. We do not use employee data for marketing or advertising.</p>
+
+      <h2>4. Cookies and tracking</h2>
+      <p>We use a single session cookie named <code>salary_session</code>. It is HttpOnly, SameSite=Strict, and expires after 7 or 30 days depending on your sign-in choice. We do not use third-party analytics cookies.</p>
+
+      <h2>5. Data retention</h2>
+      <p>Employee records and payroll data are retained for as long as the account is active. Archived (deleted) employees remain linked to historical payroll records. You may request deletion of your account by contacting the workspace administrator.</p>
+
+      <h2>6. Security</h2>
+      <p>We apply rate limiting, parameterized queries, server-side input validation, and security headers (CSP, HSTS, X-Frame-Options, X-Content-Type-Options) on all API routes. Passwords are hashed with PBKDF2-HMAC-SHA256 at 210,000 iterations.</p>
+
+      <h2>7. Your choices</h2>
+      <ul>
+        <li>You can sign out at any time, which clears your session cookie.</li>
+        <li>Administrators can manage user accounts, recovery emails, and role assignments from the Access Control page.</li>
+        <li>If you believe your data is inaccurate, contact the workspace administrator to correct it.</li>
+      </ul>
+
+      <h2>8. Contact</h2>
+      <p>For privacy questions, data access requests, or to report a concern, contact the workspace administrator through the application. Do not send sensitive employee data over email.</p>
+
+      <a class="back" href="/">← Back to Salary Desk</a>
+    </div>
+  </body>
+</html>

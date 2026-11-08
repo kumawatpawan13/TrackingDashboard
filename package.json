@@ -1,0 +1,26 @@
+{
+  "name": "salary-slip-automation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "npm run check && npm run db:setup",
+    "dev": "wrangler dev",
+    "db:setup": "wrangler d1 migrations apply salary-payroll --local",
+    "db:deploy": "wrangler d1 migrations apply salary-payroll --remote",
+    "check": "node --check src/index.js && node --check src/calculator.js && node --check public/app.js",
+    "test": "node --test",
+    "predeploy": "npm run check",
+    "deploy": "wrangler deploy --env production",
+    "deploy:dev": "wrangler deploy --env dev"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "framer-motion": "^14.10.1",
+    "hono": "^4.10.4"
+  },
+  "devDependencies": {
+    "agentation": "^3.1.2",
+    "wrangler": "^4.45.0"
+  }
+}

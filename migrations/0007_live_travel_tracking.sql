@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS travel_live_sessions (
+  journey_id TEXT PRIMARY KEY REFERENCES travel_journeys(id) ON DELETE CASCADE,
+  user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  started_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

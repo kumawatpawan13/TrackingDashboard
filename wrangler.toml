@@ -1,0 +1,53 @@
+name = "salary-slip-automation"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Custom domain: point your DNS to this Workers route.
+# After deploying, add a CNAME record for your domain to:
+#   salary-slip-automation.salarystatus.workers.dev
+# Or use `wrangler domains add <your-domain>` after deploy.
+# domains = ["payroll.yourcompany.com"]
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "salary-payroll"
+database_id = "fc99350a-8aca-42a9-80b0-12c2d91fa628"
+migrations_dir = "migrations"
+
+# Environment variables for production.
+# Set these in the Cloudflare dashboard or via wrangler secret.
+# [env.production]
+#   CAPTCHA_SITE_KEY = "your-captcha-site-key"
+#   CAPTCHA_SECRET_KEY = "your-captcha-secret-key"
+#   AUTH_OTP_SECRET = "your-otp-secret"
+#   RESEND_API_KEY = "your-resend-api-key"
+#   AUTH_EMAIL_FROM = "noreply@yourcompany.com"
+
+# Development environment
+[env.dev]
+name = "salary-slip-automation-dev"
+[env.dev.assets]
+directory = "./public"
+
+[[env.dev.d1_databases]]
+binding = "DB"
+database_name = "salary-payroll-dev"
+database_id = "0a5da59d-6c9a-4288-a137-750578b4f891"
+migrations_dir = "migrations"
+
+# Production environment
+[env.production]
+name = "salary-slip-automation"
+[env.production.assets]
+directory = "./public"
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "salary-payroll"
+database_id = "fc99350a-8aca-42a9-80b0-12c2d91fa628"
+migrations_dir = "migrations"
