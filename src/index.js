@@ -850,6 +850,8 @@ app.use('/api/*', async (c, next) => {
     'https://salary-slip-automation-dev.salarystatus.workers.dev',
     'http://localhost:8787',
     'http://127.0.0.1:8787',
+    'http://localhost:8788',
+    'http://127.0.0.1:8788',
     'http://localhost:3000',
     'http://127.0.0.1:3000'
   ];
