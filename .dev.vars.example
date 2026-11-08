@@ -1,4 +1,4 @@
 RESEND_API_KEY="re_your_resend_api_key"
 AUTH_EMAIL_FROM="Salary Desk <noreply@your-verified-domain.com>"
 AUTH_OTP_SECRET="replace-with-a-random-secret-of-at-least-32-bytes"
-GOOGLE_MAPS_API_KEY=AIzaSyB7AWneeUL4Z-iXVcqT-1rftWgUq4dovaM
+GOOGLE_MAPS_API_KEY=
